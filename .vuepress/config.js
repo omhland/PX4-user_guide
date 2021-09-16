@@ -23,10 +23,13 @@ module.exports = {
     }
   },
   plugins: [
+      ['sitemap', {
+        hostname: 'https://pake.web.id'
+      }],
       '@vuepress/medium-zoom',
-	  ['check-md', {
+      ['check-md', {
         pattern: 'en/**/*.md'
-	  }],
+      }],
       ['container', {
         type: 'note',
         defaultTitle: {
